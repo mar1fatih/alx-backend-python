@@ -2,6 +2,7 @@
 """notated function"""
 from typing import List
 
+
 def sum_list(input_list: List[float]) -> float:
     """sum_list function"""
     c: float = 0

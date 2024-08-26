@@ -55,7 +55,7 @@ class TestMemoize(unittest.TestCase):
             def a_property(self):
                 """a_property method"""
                 return self.a_method()
-        
+
         with patch.object(TestClass, "a_method") as pM:
             test_class = TestClass()
             test_class.a_property

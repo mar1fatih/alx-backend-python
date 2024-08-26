@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """unittests file"""
 import unittest
-from utils import *
+import utils
 from unittest.mock import patch
 from parameterized import parameterized
 
@@ -16,4 +16,4 @@ class TestAccessNestedMap(unittest.TestCase):
         ])
     def test_nested_map(self, nested_map, path, result):
         """test cases for a nested map"""
-        self.assertEqual(access_nested_map(nested_map, path), result)
+        self.assertEqual(utils.access_nested_map(nested_map, path), result)

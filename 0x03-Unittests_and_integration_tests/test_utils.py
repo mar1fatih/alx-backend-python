@@ -6,7 +6,6 @@ from unittest.mock import patch
 from parameterized import parameterized
 
 
-
 class TestAccessNestedMap(unittest.TestCase):
     """test cases for a nested map method"""
     @parameterized.expand([
